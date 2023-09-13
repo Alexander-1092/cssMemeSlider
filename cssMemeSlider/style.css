@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -8,35 +9,38 @@ body {
 }
 
 .wrapper {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 1440px;
+	max-width: 1440rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .slider {
-	max-width: 1200px;
-
-	overflow: hidden;
+	
 }
+
+.slider-box {
+	/* display: flex; */
+
+}
+
+
 .slider-item {
 	display: none;
 	opacity: 0;
-	animation: slide-anim 1s ease;
+	animation: slide-anim 2s ease;
 }
+
 
 .slider-item:target {
 	display: block;
 	opacity: 1;
 }
 
+
 @keyframes slide-anim {
 	0% {
-		display: none;
+		display: block;
 		opacity: 0;
 	}
 	100% {
@@ -45,33 +49,43 @@ body {
 	}
 }
 
+.pic {
+	margin: 0.8rem;
+}
+
 .slid {
 	width: 100%;
-	height: 100%;
+	max-height: 45rem;
 	object-fit: contain;
 }
 
+.texeAndDots {
+	display: flex;
+	justify-content: space-between;
+}
 
 
 .slide-text {
-	padding: 20px;
-	color: #ffffff;
+	margin: 0rem 0.8rem;
+	font-size: 1.5rem;
 }
 
+
 .slider-dots {
-	display: flex;
-	gap: 10px;
-	margin: 20px;
+	display: inline-flex;
+	gap: 0.5rem;
 }
 
 .dot {
-	width: 20px;
-	height: 20px;
-	border-radius: 25px;
-	background-color: #ffffff;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	border: 0.1em solid #254774;
 	cursor: pointer;
 }
 
 .dot:hover {
 	background-color: #254774;
-}
+} 
+
+
