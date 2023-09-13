@@ -16,7 +16,9 @@ body {
 }
 
 .slider {
+	margin: 3rem;
 	
+
 }
 
 .slider-box {
@@ -28,7 +30,7 @@ body {
 .slider-item {
 	display: none;
 	opacity: 0;
-	animation: slide-anim 2s ease;
+	animation: slide-anim 1s ease;
 }
 
 
@@ -62,12 +64,13 @@ body {
 .texeAndDots {
 	display: flex;
 	justify-content: space-between;
+	margin: 0rem 0.8rem;
 }
 
 
 .slide-text {
-	margin: 0rem 0.8rem;
 	font-size: 1.5rem;
+	
 }
 
 
@@ -76,16 +79,40 @@ body {
 	gap: 0.5rem;
 }
 
+@media (max-width:750px) {
+	.texeAndDots {
+		flex-wrap:wrap-reverse;
+		justify-content: center;
+		gap: 1.5rem;
+	}
+
+	.slide-text {
+		flex-basis: 100%;
+	}
+	
+}
+
+
 .dot {
-	width: 1rem;
-	height: 1rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	border-radius: 50%;
 	border: 0.1em solid #254774;
+	background-color: #254774;
 	cursor: pointer;
 }
 
 .dot:hover {
-	background-color: #254774;
+	background-color: #d3d8df;
 } 
 
-
+@media (max-width:560px) {
+	.dot {
+		width: 1rem;
+		height: 1rem;
+	}
+	.slide-text {
+		font-size: 0.8rem;
+	}
+	
+}
