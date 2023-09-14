@@ -107,6 +107,13 @@ input {
 
 .nav label:hover {
 	background-color: #7149a7;
+	transform: scale(1.2);
+	transition: all 0.5s ease;
+}
+
+.nav label:active {
+	background-color: #4e3272b9;
+	transition: all 0.5s ease;
 }
 
 #btn1:checked ~.slide-1 {
