@@ -5,102 +5,91 @@
 }
 
 body {
-	background-color: #00000091;
+	background-color: #000000d2;
 }
 
-.wrapper {
-	max-width: 1440rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.wraper {
+	max-width: 190rem;
+
 }
 
 .slider {
-	margin: 3rem;
-	background-color: aliceblue;
+	max-width: 80rem;
+	border: 0.3rem solid #817a7a;
 }
 
-.slider-box {
-}
-
-.slider-item {
+.slider-items {
 	display: none;
 	opacity: 0;
-	animation: slide-anim 1s ease;
 }
 
-.slider-item:target {
+
+.slider-items img {
+	width: 100%;
+}
+
+.text {
+	color: aliceblue;
+	font-size: 1.2rem;
+}
+
+input {
+
+}
+
+.nav {
+	display: flex;
+	gap: 0.8rem;
+}
+
+.sum {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav label {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.nav label:hover {
+	background-color: #7149a7;
+}
+
+#btn1:checked ~.slide-1 {
 	display: block;
 	opacity: 1;
+	animation: slide-show 1s ease;
 }
 
-@keyframes slide-anim {
+#btn2:checked ~.slide-2 {
+	display: block;
+	opacity: 1;
+	animation: slide-show 1s ease;
+}
+#btn3:checked ~.slide-3 {
+	display: block;
+	opacity: 1;
+	animation: slide-show 1s ease;
+}
+#btn4:checked ~.slide-4 {
+	display: block;
+	opacity: 1;
+	animation: slide-show 1s ease;
+}
+#btn5:checked ~.slide-5 {
+	display: block;
+	opacity: 1;
+	animation: slide-show 2s ease;
+}
+
+@keyframes slide-show {
 	0% {
-		display: block;
 		opacity: 0;
 	}
 	100% {
-		display: block;
 		opacity: 1;
-	}
-}
-
-.pic {
-	margin: 0.8rem;
-}
-
-.slid {
-	width: 100%;
-	max-height: 45rem;
-	object-fit: contain;
-}
-
-.texeAndDots {
-	display: flex;
-	justify-content: space-between;
-	margin: 1rem 0.8rem;
-}
-
-.slide-text {
-	font-size: 1.5rem;
-}
-
-.slider-dots {
-	display: inline-flex;
-	gap: 0.5rem;
-}
-
-@media (max-width:750px) {
-	.texeAndDots {
-		flex-wrap:wrap-reverse;
-		justify-content: center;
-		gap: 1.5rem;
-	}
-
-	.slide-text {
-		flex-basis: 100%;
-	}
-}
-
-.dot {
-	width: 1.5rem;
-	height: 1.5rem;
-	border-radius: 50%;
-	border: 0.1em solid #254774;
-	background-color: #254774;
-	cursor: pointer;
-}
-
-.dot:hover {
-	background-color: #d3d8df;
-} 
-
-@media (max-width:560px) {
-	.dot {
-		width: 1rem;
-		height: 1rem;
-	}
-	.slide-text {
-		font-size: 0.8rem;
 	}
 }
