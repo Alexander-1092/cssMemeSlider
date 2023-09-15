@@ -103,6 +103,9 @@ input {
 	.text {
 		font-size: 1.5rem;
 	}
+	.nav {
+		gap: 0.5rem;
+	} 
 }
 
 @media (max-width: 450px) {
@@ -113,6 +116,9 @@ input {
 	.text {
 		font-size: 1.2rem;
 	}
+	.nav {
+		gap: 0.2rem;
+	} 
 }
 
 
