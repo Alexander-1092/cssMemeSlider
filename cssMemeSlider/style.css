@@ -133,10 +133,20 @@ input {
 	transition: all 0.5s ease;
 }
 
+.pseudo-dot:visited {
+	background-color: #4e3272b9;
+	transition: all 0.5s ease;
+}
+
 #btn1:checked ~.slide-1 {
 	display: block;
 	opacity: 1;
 	animation: slide-show 2s ease;
+}
+
+#btn1:checked ~.slide-1  >.text-and-nav >.nav >.label-dot1 >.pseudo-dot{
+	background-color: #7149a7;
+	transform: scale(1.2);
 }
 
 #btn2:checked ~.slide-2 {
@@ -144,20 +154,43 @@ input {
 	opacity: 1;
 	animation: slide-show 2s ease;
 }
+
+#btn2:checked ~.slide-2 >.text-and-nav >.nav >.label-dot2 >.pseudo-dot{
+	background-color: #7149a7;
+	transform: scale(1.2);
+}
+
 #btn3:checked ~.slide-3 {
 	display: block;
 	opacity: 1;
 	animation: slide-show 2s ease;
 }
+
+#btn3:checked ~.slide-3 >.text-and-nav >.nav >.label-dot3 >.pseudo-dot{
+	background-color: #7149a7;
+	transform: scale(1.2);
+}
+
 #btn4:checked ~.slide-4 {
 	display: block;
 	opacity: 1;
 	animation: slide-show 2s ease;
 }
+
+#btn4:checked ~.slide-4 >.text-and-nav >.nav >.label-dot4 >.pseudo-dot {
+	background-color: #7149a7;
+	transform: scale(1.2);
+}
+
 #btn5:checked ~.slide-5 {
 	display: block;
 	opacity: 1;
 	animation: slide-show 2s ease;
+}
+
+#btn5:checked ~.slide-5 >.text-and-nav >.nav >.label-dot5 >.pseudo-dot {
+	background-color: #7149a7;
+	transform: scale(1.2);
 }
 
 @keyframes slide-show {
