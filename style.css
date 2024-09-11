@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #b3daec;
+}
+
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+}
+
+.slider {
+    border: 2px solid #000000;
+}
