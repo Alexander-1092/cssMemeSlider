@@ -35,20 +35,28 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: space-between;
 }
+
 
 
 .slide>img {
-    display: none;
-    width: 700px;
+    width: 0px;
     height: 600px;
     object-fit: contain;
+    transition: all 0.5s ease;
+}
+
+.slider__track {
+    display: flex;
+    overflow: hidden;
 }
 
 
+
 .bottom-slider>.box__text>.slider__text {
-    display: none;
+    font-size: 0;
+    transition: all 0.5s ease;
 }
 
 .bottom-slider {
@@ -78,6 +86,7 @@ h1 {
     border-radius: 100%;
     border: 1px solid #2957ec;
     cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
 .btn:hover {
@@ -85,55 +94,61 @@ h1 {
 }
 
 
-#slide-one:checked~.slider__slide1>img {
+#slide-one:checked~.slider__track>.slider__slide1>img {
     display: block;
+    width: 700px;
 }
 
-#slide-two:checked~.slider__slide2>img {
+#slide-two:checked~.slider__track>.slider__slide2>img {
     display: block;
+    width: 700px;
 }
 
-#slide-three:checked~.slider__slide3>img {
+#slide-three:checked~.slider__track>.slider__slide3>img {
     display: block;
+    width: 700px;
 }
 
-#slide-four:checked~.slider__slide4>img {
+#slide-four:checked~.slider__track>.slider__slide4>img {
     display: block;
+    width: 700px;
 }
 
-#slide-five:checked~.slider__slide5>img {
+#slide-five:checked~.slider__track>.slider__slide5>img {
     display: block;
+    width: 700px;
 }
 
-#slide-six:checked~.slider__slide6>img {
+#slide-six:checked~.slider__track>.slider__slide6>img {
     display: block;
+    width: 700px;
 }
 
 
 
 
 #slide-one:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(1) {
-    display: flex;
+    font-size: 24px;
 }
 
 #slide-two:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(2) {
-    display: flex;
+    font-size: 24px;
 }
 
 #slide-three:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(3) {
-    display: flex;
+    font-size: 24px;
 }
 
 #slide-four:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(4) {
-    display: flex;
+    font-size: 24px;
 }
 
 #slide-five:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(5) {
-    display: flex;
+    font-size: 24px;
 }
 
 #slide-six:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(6) {
-    display: flex;
+    font-size: 24px;
 }
 
 
