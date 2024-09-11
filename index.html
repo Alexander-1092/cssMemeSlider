@@ -17,21 +17,31 @@
     <main class="main">
         <div class="container">
             <div class="slider">
-                <label>
-                    <span class="slider__text">Текст 1</span>
-                    <img src="./mems/1547192201120218378.jpg" alt="mem" class="slider__img">
-                    <input type="radio" id="mem-one" name="slider">
-                </label>
-                <label>
-                    <span class="slider__text">Текст 1</span>
-                    <img src="./mems/1662033801146779379.jpg" alt="mem" class="slider__img">
-                    <input type="radio" id="mem-two" name="slider">
-                </label>
-                <label>
-                    <span class="slider__text">Текст 3</span>
-                    <img src="./mems/1673589193164914427.jpg" alt="mem" class="slider__img">
-                    <input type="radio" id="mem-three" name="slider">
-                </label>
+                <input id="slide-one" type="radio" name="slider">
+                <input id="slide-two" type="radio" name="slider">
+                <div class="slide slider__slide1">
+                    <img src="./mems/1547192201120218378.jpg" alt="">
+                </div>
+
+                <div class="slide slider__slide2">
+                    <img src="./mems/1662033801146779379.jpg" alt="">
+                </div>
+                <div class="bottom-slider">
+
+                    <div class="box__text">
+                        <span class="slider__text">text 1</span>
+                        <span class="slider__text">text 2</span>
+                    </div>
+
+                    <div class="box__label">
+                        <label for="slide-one" class="slider__box">
+                            <span class="btn"></span>
+                        </label>
+                        <label for="slide-two" class="slider__box">
+                            <span class="btn"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
