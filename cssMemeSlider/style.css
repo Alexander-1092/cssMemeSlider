@@ -121,7 +121,7 @@ h1 {
 
 .btn {
     display: block;
-    margin: 0.6rem;
+    /* margin: 0.6rem; */
     width: 1.25rem;
     height: 1.25rem;
     border-radius: 100%;
@@ -131,38 +131,47 @@ h1 {
     transition: background-color 0.5s ease;
 }
 
-.btn:hover {
+
+
+.pseudo_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.pseudo_btn:hover>.btn {
     background-color: #fff;
+}
+
+.pseudo_btn:active>.btn {
+    background-color: #2957ec;
 }
 
 
 #slide-one:checked~.slider__track>.slider__slide1>img {
-    display: block;
     width: 100%;
 }
 
 #slide-two:checked~.slider__track>.slider__slide2>img {
-    display: block;
     width: 100%;
 }
 
 #slide-three:checked~.slider__track>.slider__slide3>img {
-    display: block;
     width: 100%;
 }
 
 #slide-four:checked~.slider__track>.slider__slide4>img {
-    display: block;
     width: 100%;
 }
 
 #slide-five:checked~.slider__track>.slider__slide5>img {
-    display: block;
     width: 100%;
 }
 
 #slide-six:checked~.slider__track>.slider__slide6>img {
-    display: block;
     width: 100%;
 }
 
@@ -218,4 +227,8 @@ h1 {
 
 #slide-six:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(6)>.btn {
     background-color: #272c2e;
+}
+
+.footer__text {
+    text-align: center;
 }
