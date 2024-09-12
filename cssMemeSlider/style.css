@@ -205,27 +205,27 @@ h1 {
 
 
 
-#slide-one:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(1)>.btn {
+#slide-one:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(1)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
-#slide-two:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(2)>.btn {
+#slide-two:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(2)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
-#slide-three:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(3)>.btn {
+#slide-three:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(3)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
-#slide-four:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(4)>.btn {
+#slide-four:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(4)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
-#slide-five:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(5)>.btn {
+#slide-five:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(5)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
-#slide-six:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(6)>.btn {
+#slide-six:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(6)>.pseudo_btn>.btn {
     background-color: #272c2e;
 }
 
