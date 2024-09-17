@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    background-color: #272c2e;
+    color: aliceblue;
+}
+
+input {
+    width: 0;
+    height: 0;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.container {
+    max-width: 92.5rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.slider__track {
+    display: flex;
+    overflow: hidden;
+    max-width: 56.25rem;
+}
+
+.slide {}
+
+.slide>img {
+    width: 0;
+    height: 50rem;
+    object-fit: contain;
+    transition: width 0.4s ease-out;
+}
+
+
+.bottom-slider>.box__text>.slider__text {
+    font-size: 0;
+    transition: all 0.4s ease;
+}
+
+.bottom-slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.125rem 3.125rem;
+    padding: 0rem 3.7rem;
+}
+
+
+@media (max-width:980px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+    .bottom-slider {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .box__text {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 0.45rem;
+    }
+}
+
+@media (max-width:380px) {
+    html {
+        font-size: 0.35rem;
+    }
+}
+
+.box__label {
+    display: flex;
+    gap: 0.3rem;
+}
+
+
+.slider__text {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: block;
+    /* margin: 0.6rem; */
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 100%;
+    border: 0.06rem solid #2957ec;
+    background-color: #2957ec;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+
+.pseudo_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+
+
+.pseudo_btn:hover>.btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.pseudo_btn:active>.btn {
+    background-color: #2957ec;
+}
+
+
+#slide-one:checked~.slider__track>.slider__slide1>img {
+    width: 100%;
+}
+
+#slide-two:checked~.slider__track>.slider__slide2>img {
+    width: 100%;
+}
+
+#slide-three:checked~.slider__track>.slider__slide3>img {
+    width: 100%;
+}
+
+#slide-four:checked~.slider__track>.slider__slide4>img {
+    width: 100%;
+}
+
+#slide-five:checked~.slider__track>.slider__slide5>img {
+    width: 100%;
+}
+
+#slide-six:checked~.slider__track>.slider__slide6>img {
+    width: 100%;
+}
+
+
+
+
+#slide-one:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(1) {
+    font-size: 1.5rem;
+}
+
+#slide-two:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(2) {
+    font-size: 1.5rem;
+}
+
+#slide-three:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(3) {
+    font-size: 1.5rem;
+}
+
+#slide-four:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(4) {
+    font-size: 1.5rem;
+}
+
+#slide-five:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(5) {
+    font-size: 1.5rem;
+}
+
+#slide-six:checked~.bottom-slider>.box__text>.slider__text:nth-of-type(6) {
+    font-size: 1.5rem;
+}
+
+
+
+
+#slide-one:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(1)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+#slide-two:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(2)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+#slide-three:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(3)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+#slide-four:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(4)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+#slide-five:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(5)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+#slide-six:checked~.bottom-slider>.box__label>.slider__box:nth-of-type(6)>.pseudo_btn>.btn {
+    background-color: #272c2e;
+}
+
+.footer__text {
+    text-align: center;
+}
