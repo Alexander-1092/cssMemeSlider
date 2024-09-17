@@ -128,7 +128,7 @@ h1 {
     border: 0.06rem solid #2957ec;
     background-color: #2957ec;
     cursor: pointer;
-    transition: background-color 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -142,10 +142,13 @@ h1 {
     cursor: pointer;
 }
 
+
+
 .pseudo_btn:hover>.btn {
     background-color: #fff;
     border: 1px solid #fff;
 }
+
 
 .pseudo_btn:active>.btn {
     background-color: #2957ec;
