@@ -144,6 +144,7 @@ h1 {
 
 .pseudo_btn:hover>.btn {
     background-color: #fff;
+    border: 1px solid #fff;
 }
 
 .pseudo_btn:active>.btn {
